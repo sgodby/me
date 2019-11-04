@@ -8,21 +8,24 @@ div {
   width: 960px;
   margin: auto;
   padding: 10px;
+  display: grid;
+ grid-template-columns: repeat(4, 1fr);
 
 }
 
-h1 {
+header {
   color: white;
   background-color: black;
-  padding: 20px;
+/*  padding: 20px;*/
   font-family: Helvetica, sans-serif;
   font-style: normal;
+  grid-column: span 4;
 }
 
 h2 {
   text-decoration: underline;
   font-family: Helvetica, sans-serif;
-  padding:
+/*  padding:*/
 }
 
 .boldtext {
@@ -30,8 +33,9 @@ h2 {
 }
 
 nav {
-  float: left;
-  padding-right: 10px
+  /*float: left;
+  padding-right: 10px*/
+  grid-column: span 1;
 }
 
 ul {
@@ -75,12 +79,13 @@ img {
   margin: 5px;
   width: 500px;
   border: 2px solid black;
-  padding: 10px
+  padding: 10px;
 }
 
 main {
-  width: 720px;
-  margin-left: 240px;
+/*  width: 720px;
+  margin-left: 240px;*/
+  grid-column: span 3;
 }
 
 p {
@@ -90,9 +95,10 @@ p {
 footer {
   background-color: red;
   font-style: italic;
-  padding: 10px;
-  padding-left: 30px;
+/*  padding: 10px;
+  padding-left: 30px;*/
   border: 3px solid black;
   color: white;
   text-align:center;
+  grid-column: span 4;
 }
